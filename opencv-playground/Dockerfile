@@ -10,5 +10,6 @@ RUN pacman -S   --noconfirm mathjax
 ADD https://github.com/krallin/tini/releases/download/v0.10.0/tini-static /tini
 RUN chmod a+x /tini
 RUN pacman -S   --noconfirm python-numpy
+RUN pacman -S   --noconfirm python-matplotlib
 EXPOSE 8888
 CMD /tini -- jupyter notebook --debug -y --ip 0.0.0.0 --no-browser
