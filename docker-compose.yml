@@ -1,0 +1,6 @@
+version: '2'
+services:
+  opencv-playground:
+    build: opencv-playground
+    ports:
+      - 8888:8888
