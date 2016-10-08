@@ -4,3 +4,5 @@ services:
     build: opencv-playground
     ports:
       - 8888:8888
+    volumes:
+      - ./images:/var/lib/images
