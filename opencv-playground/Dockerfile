@@ -13,6 +13,7 @@ RUN pacman -S   --noconfirm python-numpy
 RUN pacman -S   --noconfirm python-matplotlib
 RUN python3 -c 'import matplotlib.pyplot'
 RUN pacman -S   --noconfirm qt5-svg
+RUN pacman -S   --noconfirm jupyter-nbconvert
 ADD ipython_kernel_config.py /root/.ipython/profile_default/
 ADD jupyter_notebook_config.py /root/.jupyter/
 EXPOSE 8888
